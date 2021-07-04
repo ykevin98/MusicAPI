@@ -5,19 +5,19 @@ import { musicAPIService } from './services';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MatrixBoardComponent } from './matrix-board/matrix-board.component';
+import { musicAppComponents } from "./musicAppComponents/musicAppComponents.module";
 
 @NgModule({
   declarations: [
     AppComponent,
-    MatrixBoardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    musicAppComponents
   ],
   providers: [musicAPIService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, musicAppComponents]
 })
 export class AppModule { }

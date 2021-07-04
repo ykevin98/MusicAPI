@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as fromServices from '../services';
-import * as fromModels from '../models';
+import * as fromServices from '../../services';
+import * as fromModels from '../../models';
 
 @Component({
   selector: 'app-matrix-board',
