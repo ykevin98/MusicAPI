@@ -72,10 +72,12 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "music-app:build:production"
+              "browserTarget": "music-app:build:production",
+              "proxyConfig": "src/proxy-config.json"
             },
             "development": {
-              "browserTarget": "music-app:build:development"
+              "browserTarget": "music-app:build:development",
+              "proxyConfig": "src/proxy-config.json"
             }
           },
           "defaultConfiguration": "development"

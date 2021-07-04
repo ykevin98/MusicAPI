@@ -5,6 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Sound from './Sound.js';
 
+class TestClass extends Sound{
+  constructor(){
+    super();
+  }
+  
+  test123(){
+    this.getString();
+  }
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <Sound/>
