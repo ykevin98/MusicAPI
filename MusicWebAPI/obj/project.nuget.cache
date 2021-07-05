@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WTtU2bkCYwSM+UHq9Jhu3bxq4Oa0OWAceeMcShj1yJ0vAgK4GZXHYJYIT0oaXQRszZ+jwVyGCQxp6gztr5pltw==",
+  "dgSpecHash": "5m7BHGITkRfDihWyHP1VkVtfaumhFl3mhxtxHxUFUDXuE21GVHeVlP+OIp/iIF4VpK566kkPdrwY8HeoHNWA+A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ykevi\\OneDrive\\MusicWebAPI\\MusicWebAPI\\MusicWebAPI.csproj",
+  "projectFilePath": "C:\\Users\\ykevi\\source\\repos\\MusicWebAPI\\MusicWebAPI\\MusicWebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ykevi\\.nuget\\packages\\audiotools\\0.2.0\\audiotools.0.2.0.nupkg.sha512",
     "C:\\Users\\ykevi\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lgz+XmNG/1SQwsGPi8SOHCAgbwt5LBd7qROUNDQz6UiZet2nO/oRI+Xq06KACYqdqi/zsf/iYh40NvHTNcPezw==",
+  "dgSpecHash": "V66hE+Vod5MHUzJPS9+MnqdWnaF8q3LnnoFPYapi2w3/7hNki7UH4E1UNuezb3px1LzekFNfyR58Duz/9eQozw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ykevi\\OneDrive\\MusicWebAPI\\MusicServices\\MusicServices.csproj",
+  "projectFilePath": "C:\\Users\\ykevi\\source\\repos\\MusicWebAPI\\MusicServices\\MusicServices.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ykevi\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\ykevi\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

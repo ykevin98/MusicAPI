@@ -11,6 +11,7 @@ namespace MusicServices.Mapping
             CreateMap<UserViewModel, User>().ReverseMap();
             CreateMap<SoundViewModel, Sound>().ReverseMap();
             CreateMap<MusicResultViewModel, MusicResult>().ReverseMap();
+            CreateMap<MenuItemViewModel, MenuItem>().ReverseMap();
         }
     }
 }

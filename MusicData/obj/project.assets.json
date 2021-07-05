@@ -4089,11 +4089,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ykevi\\OneDrive\\MusicWebAPI\\MusicData\\MusicData.csproj",
+      "projectUniqueName": "C:\\Users\\ykevi\\source\\repos\\MusicWebAPI\\MusicData\\MusicData.csproj",
       "projectName": "MusicData",
-      "projectPath": "C:\\Users\\ykevi\\OneDrive\\MusicWebAPI\\MusicData\\MusicData.csproj",
+      "projectPath": "C:\\Users\\ykevi\\source\\repos\\MusicWebAPI\\MusicData\\MusicData.csproj",
       "packagesPath": "C:\\Users\\ykevi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ykevi\\OneDrive\\MusicWebAPI\\MusicData\\obj\\",
+      "outputPath": "C:\\Users\\ykevi\\source\\repos\\MusicWebAPI\\MusicData\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ykevi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4161,7 +4161,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

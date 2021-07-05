@@ -17,6 +17,8 @@ namespace MusicData.UOW
     {
         IRepository<User> UserRepository { get; }
         IRepository<Sound> SoundRepository { get; }
+        IRepository<MenuItem> MenuItemRepository { get; }
+        MusicResult UpdateSound(Sound sound);
         MusicResult AddSound(Sound sound);
         MusicResult DeleteSound(string id);
     }
@@ -33,6 +35,7 @@ namespace MusicData.UOW
         private readonly IHttpContextAccessor _httpContextAccessor;
         private IRepository<User> _userRepository;
         private IRepository<Sound> _soundRepository;
+        private IRepository<MenuItem> _menuItemRepository;
 
         #endregion
 
@@ -61,6 +64,68 @@ namespace MusicData.UOW
             get
             {
                 return _soundRepository ??= new Repository<Sound>(_context, _httpContextAccessor);
+            }
+        }
+
+        public IRepository<MenuItem> MenuItemRepository
+        {
+            get
+            {
+                return _menuItemRepository ??= new Repository<MenuItem>(_context, _httpContextAccessor);
+            }
+        }
+
+        public MusicResult UpdateSound(Sound sound)
+        {
+            using (_context)
+            {
+                try
+                {
+                    string id = Convert.ToString(sound.Id);
+                    Sound record = SoundRepository.FindBy(x => x.Id == id).FirstOrDefault();
+                    
+                    if (record == null)
+                    {
+                        MusicResult errorResult = new MusicResult
+                        {
+                            Id = record.Id,
+                            IsSuccessful = false,
+                            Message = $"An unexpected error on finding the sound. Can't find the sound with id : {id}"
+                        };
+
+                        return errorResult;
+                    }
+
+                    record.Id = sound.Id;
+                    record.FileName = sound.FileName;
+                    record.FilePath = sound.FilePath;
+                    record.FileSize = sound.FileSize;
+                    record.Modified = DateTime.Now;
+
+                    _context.Update(record);
+
+                    _context.SaveChanges();
+
+                    MusicResult result = new MusicResult
+                    {
+                        Id = id,
+                        IsSuccessful = true,
+                        Message = "Update sound successfully"
+                    };
+
+                    return result;
+                }
+                catch(Exception exception)
+                {
+                    MusicResult result = new MusicResult
+                    {
+                        Id = sound.Id,
+                        IsSuccessful = false,
+                        Message = $"An unexpected error on updating sound: {exception.Message}"
+                    };
+
+                    return result;
+                }
             }
         }
 

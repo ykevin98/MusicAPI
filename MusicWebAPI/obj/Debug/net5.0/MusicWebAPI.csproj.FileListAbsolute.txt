@@ -106,7 +106,6 @@ C:\Users\ykevi\OneDrive\MusicWebAPI\MusicWebAPI\bin\Debug\net5.0\MusicData.dll
 C:\Users\ykevi\OneDrive\MusicWebAPI\MusicWebAPI\bin\Debug\net5.0\MusicServices.dll
 C:\Users\ykevi\OneDrive\MusicWebAPI\MusicWebAPI\bin\Debug\net5.0\MusicData.pdb
 C:\Users\ykevi\OneDrive\MusicWebAPI\MusicWebAPI\bin\Debug\net5.0\MusicServices.pdb
-C:\Users\ykevi\OneDrive\MusicWebAPI\MusicWebAPI\obj\Debug\net5.0\MusicWebAPI.csprojAssemblyReference.cache
 C:\Users\ykevi\OneDrive\MusicWebAPI\MusicWebAPI\obj\Debug\net5.0\MusicWebAPI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ykevi\OneDrive\MusicWebAPI\MusicWebAPI\obj\Debug\net5.0\MusicWebAPI.AssemblyInfoInputs.cache
 C:\Users\ykevi\OneDrive\MusicWebAPI\MusicWebAPI\obj\Debug\net5.0\MusicWebAPI.AssemblyInfo.cs
@@ -135,3 +134,4 @@ C:\Users\ykevin98\SkyDrive\MusicWebAPI\MusicWebAPI\obj\Debug\net5.0\MusicWebAPI.
 C:\Users\ykevin98\SkyDrive\MusicWebAPI\MusicWebAPI\obj\Debug\net5.0\MusicWebAPI.dll
 C:\Users\ykevin98\SkyDrive\MusicWebAPI\MusicWebAPI\obj\Debug\net5.0\ref\MusicWebAPI.dll
 C:\Users\ykevin98\SkyDrive\MusicWebAPI\MusicWebAPI\obj\Debug\net5.0\MusicWebAPI.pdb
+C:\Users\ykevi\OneDrive\MusicWebAPI\MusicWebAPI\obj\Debug\net5.0\MusicWebAPI.csproj.AssemblyReference.cache

@@ -25,6 +25,7 @@ namespace MusicData.Context
 
         public virtual DbSet<User> User { get; set; }
         public virtual DbSet<Sound> Sound { get; set; }
+        public virtual DbSet<MenuItem> MenuItem { get; set; }
 
         #endregion
 
@@ -50,6 +51,12 @@ namespace MusicData.Context
                 entity.HasKey(e => new { e.Id });
                 //entity.Property(e => e.FileSize("Size"));
                 entity.ToTable("audiodata");
+            });
+
+            modelBuilder.Entity<MenuItem>(entity =>
+            {
+                entity.HasKey(e => new { e.Id });
+                entity.ToTable("menuitems");
             });
         }
 

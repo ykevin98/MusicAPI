@@ -23,10 +23,21 @@ namespace MusicServices.Mapping
             return mapper.Map<IEnumerable<UserViewModel>>(models);
         }
 
+        public static IEnumerable<SoundViewModel> ToViewModels(this IEnumerable<Sound> models, IMapper mapper)
+        {
+            return mapper.Map<IEnumerable<SoundViewModel>>(models);
+        }
+
         public static MusicResultViewModel ToViewModels(this MusicResult model, IMapper mapper)
         {
             return mapper.Map<MusicResultViewModel>(model);
         }
+
+        public static IEnumerable<MenuItemViewModel> ToViewModels(this IEnumerable<MenuItem> models, IMapper mapper)
+        {
+            return mapper.Map<IEnumerable<MenuItemViewModel>>(models);
+        }
+
         #endregion
 
         #region ToDataModels

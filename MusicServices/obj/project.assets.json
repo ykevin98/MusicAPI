@@ -4185,11 +4185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ykevi\\OneDrive\\MusicWebAPI\\MusicServices\\MusicServices.csproj",
+      "projectUniqueName": "C:\\Users\\ykevi\\source\\repos\\MusicWebAPI\\MusicServices\\MusicServices.csproj",
       "projectName": "MusicServices",
-      "projectPath": "C:\\Users\\ykevi\\OneDrive\\MusicWebAPI\\MusicServices\\MusicServices.csproj",
+      "projectPath": "C:\\Users\\ykevi\\source\\repos\\MusicWebAPI\\MusicServices\\MusicServices.csproj",
       "packagesPath": "C:\\Users\\ykevi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ykevi\\OneDrive\\MusicWebAPI\\MusicServices\\obj\\",
+      "outputPath": "C:\\Users\\ykevi\\source\\repos\\MusicWebAPI\\MusicServices\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ykevi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4206,8 +4206,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\ykevi\\OneDrive\\MusicWebAPI\\MusicData\\MusicData.csproj": {
-              "projectPath": "C:\\Users\\ykevi\\OneDrive\\MusicWebAPI\\MusicData\\MusicData.csproj"
+            "C:\\Users\\ykevi\\source\\repos\\MusicWebAPI\\MusicData\\MusicData.csproj": {
+              "projectPath": "C:\\Users\\ykevi\\source\\repos\\MusicWebAPI\\MusicData\\MusicData.csproj"
             }
           }
         }
@@ -4246,7 +4246,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

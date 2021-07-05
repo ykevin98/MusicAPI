@@ -43,7 +43,8 @@ namespace MusicWebAPI.Controllers
 
         #region API Actions
 
-        [HttpGet("UserInfo")]
+        [HttpGet]
+        [Route("UserInfo")]
         [ProducesResponseType(typeof(UserViewModel), StatusCodes.Status200OK)]
         public IActionResult GetUserInfo(string firstName, string lastName)
         {
@@ -52,7 +53,24 @@ namespace MusicWebAPI.Controllers
             return Ok(user);
         }
 
-        [HttpGet("AllUsers")]
+        [HttpGet]
+        [Route("GetUser")]
+        [ProducesResponseType(typeof(UserViewModel), StatusCodes.Status200OK)]
+        public IActionResult GetUser(string userName)
+        {
+            var user = _musicService.GetUser(userName);
+
+            if (user == null)
+            {
+                
+            }
+
+            return Ok(user);
+        }
+
+        [HttpGet]
+        [Route("GetUsers")]
+
         [ProducesResponseType(typeof(UserViewModel), StatusCodes.Status200OK)]
         public IActionResult GetAllUsers()
         {
@@ -61,11 +79,40 @@ namespace MusicWebAPI.Controllers
             return Ok(users);
         }
 
-        [HttpPost]
+        [HttpGet]
+        [Route("GetSounds")]
+        [ProducesResponseType(typeof(SoundViewModel), StatusCodes.Status200OK)]
+        public IActionResult GetSounds()
+        {
+            var sounds = _musicService.GetSounds();
+
+            return Ok(sounds);
+        }
+
+        [HttpGet]
+        [Route("GetMenuItems")]
+        [ProducesResponseType(typeof(MenuItemViewModel), StatusCodes.Status200OK)]
+        public IActionResult GetMenuItems()
+        {
+            var menuItems = _musicService.GetMenuItems();
+
+            return Ok(menuItems);
+        }
+
+        [HttpPost("AddSound")]
         [ProducesResponseType(typeof(MusicResultViewModel), StatusCodes.Status200OK)]
         public IActionResult AddSound(SoundViewModel sound)
         {
             var result = _musicService.AddSound(sound);
+
+            return Ok(result);
+        }
+
+        [HttpPost("UpdateSound")]
+        [ProducesResponseType(typeof(MusicResultViewModel), StatusCodes.Status200OK)]
+        public IActionResult UpdateSound(SoundViewModel sound)
+        {
+            var result = _musicService.UpdateSound(sound);
 
             return Ok(result);
         }
@@ -78,6 +125,16 @@ namespace MusicWebAPI.Controllers
 
             return Ok(result);
         }
+
+        [HttpGet("GetString")]
+        [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
+        public IActionResult GetString()
+        {
+            var result = "Hello World";
+
+            return Ok(result);
+        }
+
         #endregion
     }
 }

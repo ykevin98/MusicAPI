@@ -16,8 +16,12 @@ namespace MusicServices.Services
     public interface IMusicService
     {
         public UserViewModel GetUserInfo(string firstName, string lastName);
+        public UserViewModel GetUser(string userName);
         public IEnumerable<UserViewModel>GetAllUsers();
+        public IEnumerable<SoundViewModel> GetSounds();
+        public IEnumerable<MenuItemViewModel> GetMenuItems();
         public MusicResultViewModel AddSound(SoundViewModel sound);
+        public MusicResultViewModel UpdateSound(SoundViewModel sound);
         public MusicResultViewModel DeleteSound(string id);
     }
 
@@ -53,6 +57,12 @@ namespace MusicServices.Services
             return result.ToViewModel(_mapper);
         }
 
+        public UserViewModel GetUser(string userName)
+        {
+            var result = _musicUOW.UserRepository.FindBy(x => x.Username == userName).FirstOrDefault();
+
+            return result.ToViewModel(_mapper);
+        }
         public IEnumerable<UserViewModel> GetAllUsers()
         {
             var results = _musicUOW.UserRepository.All().ToList();
@@ -60,9 +70,30 @@ namespace MusicServices.Services
             return results.ToViewModels(_mapper);
         }
 
+        public IEnumerable<SoundViewModel> GetSounds()
+        {
+            var results = _musicUOW.SoundRepository.All().ToList();
+
+            return results.ToViewModels(_mapper);
+        }
+
+        public IEnumerable<MenuItemViewModel> GetMenuItems()
+        {
+            var results = _musicUOW.MenuItemRepository.All().ToList();
+
+            return results.ToViewModels(_mapper);
+        }
+
         public MusicResultViewModel AddSound(SoundViewModel sound)
         {
             var result = _musicUOW.AddSound(sound.ToDataModel(_mapper));
+
+            return result.ToViewModels(_mapper);
+        }
+
+        public MusicResultViewModel UpdateSound(SoundViewModel sound)
+        {
+            var result = _musicUOW.UpdateSound(sound.ToDataModel(_mapper));
 
             return result.ToViewModels(_mapper);
         }

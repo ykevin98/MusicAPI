@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <StartupObject>MusicWebAPI.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

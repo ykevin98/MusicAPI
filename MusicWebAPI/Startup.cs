@@ -15,7 +15,8 @@ using System.Reflection;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using System;
-using Pomelo.EntityFrameworkCore.MySql.Infrastructure; 
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+using Microsoft.AspNetCore.Server.IISIntegration;
 
 #endregion
 
@@ -41,12 +42,17 @@ namespace MusicWebAPI
 
             services.AddCors(options =>
             {
-                options.AddPolicy(name: "DefaultCorsPolicy",
+                options.AddPolicy(name: "CorsPolicy",
                     builder =>
                     {
-                        builder.WithOrigins("http://localhost:4200");
+                        builder.WithOrigins("http://localhost:4200")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowCredentials();
                     });
             });
+
+            services.AddAuthentication(IISDefaults.AuthenticationScheme);
 
             services.AddAutoMapper(Assembly.GetAssembly(typeof(MappingConfiguration)));
             services.AddControllers();
@@ -80,6 +86,8 @@ namespace MusicWebAPI
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors("CorsPolicy");
 
             app.UseEndpoints(endpoints =>
             {
