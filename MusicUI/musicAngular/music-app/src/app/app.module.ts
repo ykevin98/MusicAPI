@@ -17,6 +17,7 @@ import { musicAppComponents } from "./musicAppComponents/musicAppComponents.modu
     HttpClientModule,
     musicAppComponents
   ],
+
   providers: [musicAPIService],
   bootstrap: [AppComponent, musicAppComponents]
 })

@@ -35,6 +35,6 @@ export class musicAPIService {
 
     getUser(): Observable<fromModels.IUser>{
         return this.httpClient.get<fromModels.IUser>
-        (this.baseURL + 'Music/GetUser', {withCredentials: true});
+        (this.baseURL + 'Music/GetUser' + '?userName=ykevin98', {withCredentials: true});
     }
 }
