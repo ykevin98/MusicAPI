@@ -30,3 +30,15 @@ C:\Users\ykevin98\SkyDrive\MusicWebAPI\MusicData\obj\Debug\net5.0\MusicData.dll
 C:\Users\ykevin98\SkyDrive\MusicWebAPI\MusicData\obj\Debug\net5.0\ref\MusicData.dll
 C:\Users\ykevin98\SkyDrive\MusicWebAPI\MusicData\obj\Debug\net5.0\MusicData.pdb
 C:\Users\ykevi\OneDrive\MusicWebAPI\MusicData\obj\Debug\net5.0\MusicData.csproj.AssemblyReference.cache
+C:\Users\ykevi\source\repos\MusicWebAPI\MusicData\bin\Debug\net5.0\MusicData.deps.json
+C:\Users\ykevi\source\repos\MusicWebAPI\MusicData\bin\Debug\net5.0\MusicData.dll
+C:\Users\ykevi\source\repos\MusicWebAPI\MusicData\bin\Debug\net5.0\ref\MusicData.dll
+C:\Users\ykevi\source\repos\MusicWebAPI\MusicData\bin\Debug\net5.0\MusicData.pdb
+C:\Users\ykevi\source\repos\MusicWebAPI\MusicData\obj\Debug\net5.0\MusicData.csproj.AssemblyReference.cache
+C:\Users\ykevi\source\repos\MusicWebAPI\MusicData\obj\Debug\net5.0\MusicData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ykevi\source\repos\MusicWebAPI\MusicData\obj\Debug\net5.0\MusicData.AssemblyInfoInputs.cache
+C:\Users\ykevi\source\repos\MusicWebAPI\MusicData\obj\Debug\net5.0\MusicData.AssemblyInfo.cs
+C:\Users\ykevi\source\repos\MusicWebAPI\MusicData\obj\Debug\net5.0\MusicData.csproj.CoreCompileInputs.cache
+C:\Users\ykevi\source\repos\MusicWebAPI\MusicData\obj\Debug\net5.0\MusicData.dll
+C:\Users\ykevi\source\repos\MusicWebAPI\MusicData\obj\Debug\net5.0\ref\MusicData.dll
+C:\Users\ykevi\source\repos\MusicWebAPI\MusicData\obj\Debug\net5.0\MusicData.pdb

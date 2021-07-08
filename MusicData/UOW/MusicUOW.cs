@@ -136,11 +136,12 @@ namespace MusicData.UOW
                 try
                 {
                     Guid id = Guid.NewGuid();
+
                     sound.Id = Convert.ToString(id);
                     _context.Add(sound);
 
                     _context.SaveChanges();
-
+                    
                     MusicResult result = new MusicResult
                     {
                         Id = sound.Id,

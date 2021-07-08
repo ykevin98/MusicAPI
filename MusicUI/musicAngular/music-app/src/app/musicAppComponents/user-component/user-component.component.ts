@@ -24,4 +24,7 @@ export class UserComponentComponent implements OnInit {
     this.musicAPIService.getUser().subscribe(result => (this.user = result));
   }
 
+  onMatrxiClick(): void{
+
+  }
 }

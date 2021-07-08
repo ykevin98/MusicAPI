@@ -11,10 +11,13 @@ import * as fromModels from '../../models';
 export class MatrixBoardComponent implements OnInit {
 
   sounds: fromModels.ISound[] = [];
+  Arr: Array<number> = [];
+  counter: number = 25;
 
   constructor(private musicAPIService: fromServices.musicAPIService) { }
 
   ngOnInit(): void {
+    this.Arr.fill(25);
     this.musicAPIService.getSounds().subscribe(results => (this.sounds = results));
   }
 

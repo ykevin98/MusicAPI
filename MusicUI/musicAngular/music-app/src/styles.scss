@@ -1,17 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 
 .main{
-    background-image: url('/src/musicWebBackground.jpg');
+    background-image: url('/src/musicWebBackground.jpg'); 
 }
 
 .matrixboard{
     display: grid;
-    grid-template-columns: 120px 120px 120px 20px;
-    grid-row: 120px, 120px, 120px, 20px;
     justify-content: center;
 };
 
 .box {
     background-color: #d9d9d9;
-    border: 2px solid black;
+    height: 75px;
+    width: 75px;
+    float:left;
+    padding: 0px;
+    border: 5px solid black;
+    margin: 5px;
    }
+
+.matrixBoardCard{
+    height: 550px;
+    width: 550px;
+}
